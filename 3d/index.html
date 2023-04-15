@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebAR播放3D模型-无间AR云识别</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="asset/css/default.css" />
+</head>
+
+<body>
+
+    <div class="page" id="page1">
+        <div class="page1-tip">
+            WebAR播放3D模型,请扫描居民身份证有国徽的那一面来体验.
+        </div>
+        <div class="btn-group">
+            <span id="btnScan" class="btn">点击识别</span>
+        </div>
+    </div>
+
+    <div class="page hide" id="page2">
+        <div id="container"></div>
+        <div id="scanTip">
+            <div class="r-text">请将手机摄像头对识别图片，以便于更好识别。</div>
+        </div>
+        <div id="scanLine" class="hide">
+            <img src="asset/images/scan-line.png" />
+        </div>
+        <span id="btnCloseShow" class="hide">x</span>
+        <progress min="0" max="100" value="0" id="btnProgress" class="hide"></progress>
+    </div>
+
+    <div class="page hide" id="page3">
+        <div class="mask"></div>
+        <div>
+            <img class="icon-wx-ios" src="asset/images/share_ios.png" />
+            <div class="tip">
+                <div>请点击右上角<br />选择“在Safari中打开”</div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <a href="https://www.wujianar.com" target="_blank">
+            技术支持：无间AR <br /> 技术支持QQ群：722979533
+        </a>
+    </footer>
+
+    <script type="text/javascript" src="asset/libs/three/three.min.js"></script>
+    <script type="text/javascript" src="asset/libs/three/FBXLoader.min.js"></script>
+    <script type="text/javascript" src="asset/libs/three/inflate.min.js"></script>
+    <script type="text/javascript" src="asset/libs/three/GLTFLoader.min.js"></script>
+    <script type="text/javascript" src="asset/libs/three/OrbitControls.min.js"></script>
+    <script type="text/javascript" src="asset/js/vconsole.min.js"></script>
+    <script type="text/javascript" src="../libs/wujianar.js"></script>
+    <script type="text/javascript" src="asset/js/model.js"></script>
+    <script type="text/javascript" src="asset/js/app.js"></script>
+</body>
+
+</html>

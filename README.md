@@ -59,18 +59,6 @@ const wuJianAR = new WuJianAR(options);
 ## 2 打开摄像头
 
 ```javascript
-// 如果打开失败，可使用自定参数方式
-// 打开后置摄像参数，参数说明请查看 https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints
-const constraints = {
-    audio: false,
-    video: {
-        facingMode: {
-            exact: 'environment'
-        }
-    }
-};
-
-// 打开摄像头
 // 如果不能打开或画面不流畅，请参考这篇文档设置参数：https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints
 wuJianAR.openCamera().then(() => {
     // todo 打开成功，开启识别
